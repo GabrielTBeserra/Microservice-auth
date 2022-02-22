@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>AUTH_SERVICE_SERVICE</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Enums.NET" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AUTH-SERVICE-COMMON\AUTH-SERVICE-COMMON.csproj" />
+    <ProjectReference Include="..\AUTH-SERVICE-CROSSCUTING\AUTH-SERVICE-CROSSCUTING.csproj" />
+    <ProjectReference Include="..\AUTH-SERVICE-DOMAIN\AUTH-SERVICE-DOMAIN.csproj" />
+    <ProjectReference Include="..\AUTH-SERVICE-INFRASTRUCTURE\AUTH-SERVICE-INFRASTRUCTURE.csproj" />
+  </ItemGroup>
+
+  
+</Project>
