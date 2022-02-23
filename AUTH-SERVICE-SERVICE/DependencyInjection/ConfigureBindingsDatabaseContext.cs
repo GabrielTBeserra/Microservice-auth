@@ -12,7 +12,8 @@ namespace AUTH_SERVICE_SERVICE.DependencyInjection
         {
             var connectionString = configuration.GetConnectionString("mysqllocalhost");
 
-            services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 5))));
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 5))));
         }
     }
 }
